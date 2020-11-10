@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1> Amount </h1>
+    <input type="number" id="amount">
+    <h1>From currency</h1>
+    <select>
+        <option>VietNamDong</option>
+    </select>
+    <h1>To currency</h1>
+    <select>
+        <option>USD</option>
+    </select>
+</form> <br>
+<button onclick="chuyendoitiente()">Chuyển đổi từ VNĐ sang $</button>
+<script>
+    function chuyendoitiente() {
+        let amount=document.getElementById("amount").value;
+        alert("Số tiền đô la là: "+ amount/22500);
+    }
+</script>
+
+</body>
+</html>
